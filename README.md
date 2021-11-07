@@ -1,6 +1,5 @@
-# `@serverless-devs/probot-fc-serverless`
-
-> Adapter to run a [Probot](https://probot.github.io/) application function in [Aliyun FC](https://help.aliyun.com/product/50980.html) using the [Serverless Devs](https://github.com/Serverless-Devs/Serverless-Devs)
+# Intro
+If you want to Deploy [Probot](https://probot.github.io/docs/deployment/) application function in [Aliyun FC](https://help.aliyun.com/product/50980.html) using the [Serverless Devs](https://github.com/Serverless-Devs/Serverless-Devs)
 
 ## Usage
 
