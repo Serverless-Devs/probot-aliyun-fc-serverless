@@ -1,5 +1,5 @@
 # Intro
-If you want to Deploy [Probot](https://probot.github.io/docs/deployment/) application function in [Aliyun FC](https://help.aliyun.com/product/50980.html) using the [Serverless Devs](https://github.com/Serverless-Devs/Serverless-Devs)
+If you want to Deploy [Probot](https://probot.github.io/docs/deployment/) application function in [Aliyun FC](https://help.aliyun.com/product/50980.html) using the [Serverless Devs](https://github.com/Serverless-Devs/Serverless-Devs)。this package will help you
 
 ## Usage
 
