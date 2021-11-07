@@ -1,43 +1,24 @@
 {
-  "name": "@probot/adapter-aws-lambda-serverless",
-  "version": "0.0.0-development",
+  "name": "@serverless-devs/probot-fc-serverless",
+  "version": "0.0.4",
   "publishConfig": {
     "access": "public"
   },
-  "description": "An extension for running Probot in AWS Lambda",
+  "description": "An extension for running Probot in Aliyun Function Computer",
   "main": "index.js",
   "types": "index.d.ts",
-  "scripts": {
-    "lint": "prettier --check '*.{js,md,json}' 'test/**/*.{js,json}' '.github/**/*.yml'",
-    "lint:fix": "prettier --write '*.{js,md,json}' 'test/**/*.{js,json}' '.github/**/*.yml'",
-    "test": "jest"
-  },
-  "repository": "github:probot/adapter-aws-lambda-serverless",
-  "dependencies": {
-    "@probot/get-private-key": "^1.1.0",
-    "@types/aws-lambda": "^8.10.85",
-    "probot": "^11.0.6",
-    "lowercase-keys": "^2.0.0"
-  },
-  "devDependencies": {
-    "@types/jest": "^26.0.20",
-    "jest": "^26.6.3",
-    "nock": "^13.0.7",
-    "prettier": "^2.2.1"
+  "repository": "github:Serverless-Devs/probot-fc-serverless",
+  "peerDependencies": {
+    "probot": "^11.0.6"
   },
   "keywords": [
-    "lambda",
+    "fc",
     "probot",
     "github",
     "probot-adapter",
-    "serverless"
+    "serverless",
+    "Serverless Devs"
   ],
-  "jest": {
-    "testEnvironment": "node"
-  },
-  "author": "Tommy Byrd <tcbyrd@github.com>",
-  "contributors": [
-    "Gregor Martynus (https://github.com/gr2m)"
-  ],
+  "author": "heimanba <heimanba@github.com>",
   "license": "ISC"
 }

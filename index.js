@@ -1,17 +1,17 @@
 const ProbotExports = require("probot");
-const lambdaFunction = require("./lambda-function");
+const fcFunction = require("./fc-function");
 
-module.exports = { ...ProbotExports, createLambdaFunction };
+module.exports = { ...ProbotExports, createFcFunction };
 
 /**
  *
  * @param {import('probot').ApplicationFunction} app
  * @param { { probot: import('probot').Probot } } options
  */
-function createLambdaFunction(app, { probot }) {
+function createFcFunction(app, { probot }) {
   // load app once outside of the function to prevent double
   // event handlers in case of container reuse
   probot.load(app);
 
-  return lambdaFunction.bind(null, probot);
+  return fcFunction.bind(null, probot);
 }
