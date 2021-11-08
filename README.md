@@ -106,7 +106,7 @@ yMQBmzurn0EY+prWHLTWkZO+Ya2tZaAjRDhq4F6MJbtzZBk4TQuL
 
 
 ## Example
-[example-probot-fc-serverless](https://github.com/Serverless-Devs/probot-aliyun-fc-serverless/example) - Official example application that is continuously deployed to Aliyun FC
+[example-probot-fc-serverless](https://github.com/Serverless-Devs/probot-aliyun-fc-serverless/tree/master/example) - Official example application that is continuously deployed to Aliyun FC
 
 
 ## Common errors
