@@ -67,6 +67,11 @@ services:
 
 Make sure to configure your GitHub App registration's webhook URL to `<your FC's URL>/api/github/webhooks`.
 
+
+## Example
+[example-probot-fc-serverless](https://github.com/Serverless-Devs/probot-aliyun-fc-serverless/example) - Official example application that is continuously deployed to Aliyun FC
+
+
 ## Common errors
 
 | Http Code | Message                      | Description                                                                                        |

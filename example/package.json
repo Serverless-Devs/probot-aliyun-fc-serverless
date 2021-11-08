@@ -1,0 +1,24 @@
+{
+  "name": "example-probot-fc-serverless",
+  "version": "1.0.0",
+  "private": true,
+  "description": "deploy A Probot app to Aliyun FC",
+  "author": "heimanba <heimanba@github.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/Serverless-Devs/example-probot-fc-serverless",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "start": "probot run ./src/index.js"
+  },
+  "dependencies": {
+    "@serverless-devs/probot-fc-serverless": "^0.0.4",
+    "probot": "^11.0.6"
+  },
+  "engines": {
+    "node": ">= 10.13.0"
+  }
+}

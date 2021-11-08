@@ -1,0 +1,49 @@
+edition: 1.0.0
+name: fcDeployApp
+access: "default"
+
+services:
+  fc-deploy-test:
+    component: devsapp/fc
+    props:
+      region: cn-hangzhou
+      service:
+        name: fc-deploy-github
+        description: 'probot for github'
+        internetAccess: true
+        logConfig:
+          enableInstanceMetrics: true
+          enableRequestMetrics: true
+          logBeginRule: None
+          project: aliyun-fc-cn-hangzhou-f0d477fa-9f4a-5117-8503-39b6e7b04ddf
+          logstore: function-log
+        role: >-
+          acs:ram::1740298130743624:role/aliyunfclogexecutionrole
+      function:
+        environmentVariables:
+          APP_ID: ${env.APP_ID}
+          WEBHOOK_SECRET: ${env.WEBHOOK_SECRET}
+          PRIVATE_KEY: ${env.PRIVATE_KEY}
+        name: github-probot
+        description: this is a test
+        runtime: nodejs12
+        codeUri: ./
+        handler: handler.webhook
+        memorySize: 128
+        timeout: 60
+      triggers:
+        - name: httpTrigger
+          type: http
+          config:
+            authType: anonymous
+            methods:
+              - GET
+              - POST
+      customDomains:
+        - domainName: auto
+          protocol: HTTP
+          routeConfigs:
+            - path: /*
+              methods:
+                - GET
+                - POST
